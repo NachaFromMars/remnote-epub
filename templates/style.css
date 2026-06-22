@@ -1,0 +1,325 @@
+/* Start with Why — Premium EPUB Stylesheet */
+/* Optimized for Kindle, Kobo, Apple Books */
+@charset "UTF-8";
+
+/* === Base === */
+body {
+    font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 40em;
+    margin: 1em auto;
+    padding: 0 1em;
+    color: #1a1a1a;
+    background: #fff;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* === Headings === */
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 1.5em 0 0.8em;
+    line-height: 1.3;
+    color: #2C2C2C;
+    letter-spacing: 0.02em;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 1.3em 0 0.6em;
+    line-height: 1.4;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 1em 0 0.5em;
+    line-height: 1.4;
+    color: #444;
+    font-style: italic;
+    page-break-after: avoid;
+}
+
+h4 {
+    font-size: 1.05em;
+    margin: 0.8em 0 0.4em;
+    color: #555;
+}
+
+/* === Cover Page === */
+.cover-page {
+    text-align: center;
+    padding-top: 15%;
+    page-break-after: always;
+}
+
+.cover-page h1 {
+    font-size: 2.2em;
+    color: #2C2C2C;
+    margin-bottom: 0.3em;
+    page-break-before: avoid;
+    border-bottom: none;
+}
+
+.cover-page .subtitle {
+    font-size: 1.3em;
+    color: #C9A96E;
+    font-style: italic;
+    margin: 0.5em 0 1.5em;
+}
+
+.cover-page .author-info {
+    font-size: 1em;
+    color: #666;
+    margin-top: 2em;
+}
+
+.cover-page .divider {
+    width: 40%;
+    border: none;
+    border-top: 2px solid #C9A96E;
+    margin: 1.5em auto;
+}
+
+/* === Paragraphs === */
+p {
+    margin: 0.6em 0;
+    text-indent: 1.5em;
+    orphans: 2;
+    widows: 2;
+}
+
+p.no-indent, p.first {
+    text-indent: 0;
+}
+
+/* === Essence Box — Core insights === */
+.essence-box {
+    background: #f8f5f0;
+    border-left: 4px solid #C9A96E;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    font-size: 0.95em;
+    line-height: 1.7;
+    page-break-inside: avoid;
+}
+
+.essence-box p {
+    text-indent: 0;
+    margin: 0.4em 0;
+}
+
+.essence-box strong {
+    color: #8B6914;
+}
+
+/* === Flashcard === */
+.flashcard {
+    background: #f0f4f8;
+    border-left: 4px solid #4a90d9;
+    margin: 0.8em 0;
+    padding: 0.8em 1em;
+    font-size: 0.92em;
+    line-height: 1.6;
+    page-break-inside: avoid;
+}
+
+.flashcard .front {
+    font-weight: bold;
+    color: #2a5a8a;
+    margin-bottom: 0.3em;
+}
+
+.flashcard .back {
+    color: #333;
+}
+
+.flashcard p {
+    text-indent: 0;
+    margin: 0.2em 0;
+}
+
+/* === Misconception === */
+.misconception {
+    color: #8B1A2F;
+    font-style: italic;
+    margin: 0.8em 0;
+    padding: 0.6em 1em;
+    border-left: 3px solid #8B1A2F;
+    background: #fdf5f6;
+}
+
+.misconception p {
+    text-indent: 0;
+}
+
+/* === Bridge — Cross-domain === */
+.bridge {
+    color: #2d6a4f;
+    margin: 0.8em 0;
+    padding: 0.6em 1em;
+    border-left: 3px solid #2d6a4f;
+    background: #f0f7f4;
+}
+
+.bridge p {
+    text-indent: 0;
+}
+
+/* === Glossary === */
+.glossary-entry {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1em 0;
+    page-break-inside: avoid;
+}
+
+.glossary-entry h3 {
+    font-size: 1.1em;
+    margin: 0 0 0.4em;
+    color: #2C2C2C;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-style: normal;
+}
+
+.glossary-entry .vi {
+    margin: 0.3em 0;
+    text-indent: 0;
+}
+
+.glossary-entry .en {
+    margin: 0.3em 0;
+    text-indent: 0;
+    color: #555;
+    font-style: italic;
+}
+
+.glossary-entry .misconception-note {
+    color: #8B1A2F;
+    font-size: 0.9em;
+    margin: 0.3em 0;
+    text-indent: 0;
+}
+
+.glossary-entry .connection-note {
+    color: #2d6a4f;
+    font-size: 0.9em;
+    margin: 0.3em 0;
+    text-indent: 0;
+}
+
+/* === Blockquote === */
+blockquote {
+    margin: 1em 1.5em;
+    font-style: italic;
+    border-left: 3px solid #C9A96E;
+    padding-left: 1em;
+    color: #555;
+}
+
+/* === Key terms styling === */
+em {
+    font-style: italic;
+    color: #444;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* === Lists === */
+ul, ol {
+    margin: 0.6em 0 0.6em 1.5em;
+    padding: 0;
+}
+
+li {
+    margin: 0.3em 0;
+    line-height: 1.5;
+}
+
+/* === Separator === */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em auto;
+    width: 30%;
+}
+
+/* === Section marker === */
+.section-emoji {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.5em 0 0;
+    display: block;
+}
+
+/* === Thinking framework steps === */
+.framework-step {
+    margin: 1em 0;
+    padding: 0.8em 1em;
+    background: #fafafa;
+    border-left: 3px solid #C9A96E;
+    page-break-inside: avoid;
+}
+
+.framework-step p {
+    text-indent: 0;
+    margin: 0.3em 0;
+}
+
+.framework-step strong {
+    color: #8B6914;
+}
+
+/* === Insight box === */
+.insight-box {
+    margin: 1em 0;
+    padding: 0.8em 1em;
+    background: #f5f0fa;
+    border-left: 4px solid #7b5ea7;
+    page-break-inside: avoid;
+}
+
+.insight-box p {
+    text-indent: 0;
+    margin: 0.3em 0;
+}
+
+/* === Navigation TOC === */
+nav#toc ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav#toc ol ol {
+    padding-left: 1.5em;
+}
+
+nav#toc a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* === Images === */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === Page break control === */
+.page-break-before {
+    page-break-before: always;
+}
+
+.page-break-after {
+    page-break-after: always;
+}
